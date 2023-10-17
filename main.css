@@ -29,7 +29,7 @@ h1 {
 p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  font-weight: 550;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -87,7 +87,7 @@ small {
   color: rgb(209, 0, 0);
   font-style: italic;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -111,7 +111,7 @@ small {
   justify-content: center;
   box-shadow: rgba(77, 81, 84, 0.2) 0px 8px 24px;
 
-  animation: dropDown 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+  animation: dropDown 0.5s cubic-bezier(0.83, 0, 0.17, 1);
 }
 
 .todo-container {
@@ -159,12 +159,12 @@ small {
 @keyframes dropDown {
   0%
   {
-    transform: translateY(-50px);
+    transform: translateY(-100px);
     opacity: 0;
   }
   50% 
   {
-    transform: translateY(50px);
+    transform: translateY(70px);
     opacity: 1;
   }
   100% 
