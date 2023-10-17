@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  background: rgb(253,239,238);
+  background: linear-gradient(180deg, rgba(253,239,238,1) 0%, rgba(255,132,124,1) 100%);
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 10px;
+
+  animation: fadeIn 0.5s ease;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+ 
+
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 550;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  animation: fadeIn 0.5s ease;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+  
+
+input {
+  border-radius: 3px;
+  border: 1px solid rgb(183, 183, 183);
+  padding: 5px;
+  width: 180px;
+
+  animation: fadeIn 0.5s ease;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  
+}
+
+ul {
+  margin: 25px;
+  padding: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  cursor: pointer;
+
+  animation: fadeUp 0.2s ease;
+}
+
+small {
+  float: right;
+  padding-right: 45px;
+  color: rgb(209, 0, 0);
+  font-style: italic;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.failedInput {
+  animation: blink 0.5s ease-in-out;
+  animation-iteration-count: 4;
+  animation-play-state: running;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.container {
+  min-width: 400px;
+  height: fit-content;
+  padding-bottom: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(100, 105, 110, 0.2) 0px 8px 24px;
+
+  animation: dropDown 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.todo-container {
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+}
+
+.trashcan {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: small;
+  color: rgb(213, 213, 213);
+}
+
+.trashcan:hover {
+  color: grey;
+}
+
+#addTodo {
+  width: 40px;
+  height: 28px;
+  border-radius: 3px;
+  border: 1px solid rgb(183, 183, 183);
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 5px;
+
+  animation: fadeIn 0.5s ease;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#addTodo:hover {
+  background-color: rgb(200, 200, 200);
+}
+
+
+/* ANIMATION FOR CONTAINER */
+
+@keyframes dropDown {
+  0%
+  {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  50% 
+  {
+    transform: translateY(50px);
+    opacity: 1;
+  }
+  100% 
+  {
+    transform: translateY(0);
+  }
+}
+
+/* ANIMATION FOR TEXT IN CONTAINER */
+
+@keyframes fadeIn {
+  from
+  {
+    opacity: 0;
+  }
+  to 
+  {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from
+  {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to 
+  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0% 
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
