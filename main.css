@@ -19,7 +19,7 @@ h1 {
   margin: 10px;
 
   animation: fadeIn 0.5s ease;
-  animation-delay: 0.5s;
+  animation-delay: 0.6s;
   animation-fill-mode: forwards;
   opacity: 0;
  
@@ -36,7 +36,7 @@ p {
   margin-bottom: 20px;
 
   animation: fadeIn 0.5s ease;
-  animation-delay: 0.6s;
+  animation-delay: 0.7s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -50,7 +50,7 @@ input {
   font-size: 16px;
 
   animation: fadeIn 0.5s ease;
-  animation-delay: 0.7s;
+  animation-delay: 0.8s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -115,7 +115,7 @@ small {
   justify-content: center;
   box-shadow: rgba(77, 81, 84, 0.2) 0px 8px 24px;
 
-  animation: dropDown 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+  animation: dropDown 0.6s cubic-bezier(0.83, 0, 0.17, 1);
 }
 
 .todo-container {
