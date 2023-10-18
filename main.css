@@ -80,6 +80,10 @@ li span {
   transition: color 0.5s ease;
 }
 
+li span:hover {
+  text-decoration: line-through;
+}
+
 small {
   float: right;
   padding-right: 45px;
